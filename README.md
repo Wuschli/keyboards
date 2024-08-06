@@ -25,9 +25,9 @@ Minify KMK Python Code before uploading to save space
 ```
 pip install python-minifier
 
-for file in ./**/*; do \
-  if [ -f "$file" ]; then \
-    pyminify --in-place "$file" \
-  fi \
+for file in ./**/*; do
+  if [ -f "$file" ]; then
+    pyminify --in-place "$file"
+  fi
 done
 ```
