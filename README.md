@@ -21,8 +21,8 @@ Controller: https://circuitpython.org/board/supermini_nrf52840/
 
 **Minify KMK Python Code before uploading to save space**
 
-Copy **kmk** to device https://kmkfw.io/Getting_Started/
-Copy **adafruit_ble** to device https://github.com/adafruit/Adafruit_CircuitPython_BLE/
+* Copy **kmk** to device https://kmkfw.io/Getting_Started/
+* Copy **adafruit_ble** to device https://github.com/adafruit/Adafruit_CircuitPython_BLE/
 
 It might also be required to delete some unused kmk extensions to have enough space for adafruit_ble
 
