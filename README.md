@@ -14,3 +14,18 @@ if qmk toolbox has wrong driver (libusb) use zadig to install WinUsb for **bootl
 
 ### QMK
 German keycode reference: https://github.com/qmk/qmk_firmware/blob/master/quantum/keymap_extras/keymap_german.h
+
+# Handwired Split with KMK
+
+Controller: https://circuitpython.org/board/supermini_nrf52840/ 
+
+Minify KMK Python Code before uploading to save space 
+```
+pip install python-minifier
+
+for file in ./kmk/**/*; do \
+  if [ -f "$file" ]; then \
+    pyminify --in-place "$file" \
+  fi \
+done
+```
