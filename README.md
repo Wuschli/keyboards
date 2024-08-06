@@ -19,15 +19,19 @@ German keycode reference: https://github.com/qmk/qmk_firmware/blob/master/quantu
 
 Controller: https://circuitpython.org/board/supermini_nrf52840/
 
-https://kmkfw.io/Getting_Started/
+**Minify KMK Python Code before uploading to save space**
 
-Minify KMK Python Code before uploading to save space 
+Copy **kmk** to device https://kmkfw.io/Getting_Started/
+Copy **adafruit_ble** to device https://github.com/adafruit/Adafruit_CircuitPython_BLE/
+
+It might also be required to delete some unused kmk extensions to have enough space for adafruit_ble
+
 ```
 pip install python-minifier
 
 for file in ./**/*; do
   if [ -f "$file" ]; then
-    pyminify --in-place "$file"
+    pyminify --in-place --remove-debug --remove-literal-statements --no-preserve-shebang "$file"
   fi
 done
 ```
