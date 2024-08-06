@@ -17,7 +17,9 @@ German keycode reference: https://github.com/qmk/qmk_firmware/blob/master/quantu
 
 # Handwired Split with KMK
 
-Controller: https://circuitpython.org/board/supermini_nrf52840/ 
+Controller: https://circuitpython.org/board/supermini_nrf52840/
+
+https://kmkfw.io/Getting_Started/
 
 Minify KMK Python Code before uploading to save space 
 ```
